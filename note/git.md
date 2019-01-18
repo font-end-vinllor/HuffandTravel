@@ -213,8 +213,21 @@ github的地址可以是：
 分支在实际中有什么用呢？  
 > &emsp;&emsp;假设你准备开发一个新功能，但是需要两周才能完成，第一周你写了50%的代码，如果立刻提交，由于代码还没写完，不完整的代码库会导致别人不能干活了。如果等代码全部写完再一次提交，又存在丢失每天进度的巨大风险.  
 &emsp;&emsp;现在有了分支，就不用怕了。你创建了一个属于你自己的分支，别人看不到，还继续在原来的分支上正常工作，而你在自己的分支上干活，想提交就提交，直到开发完毕后，再一次性合并到原来的分支上，这样，既安全，又不影响别人工作。
-### I .创建与合并分支
-
+### I .创建与合并分支  
+把当前的修改放在分支上，即新建指针，指向分支上的修改，等任务完成后，将分支合并到master上，然后删除分支。即只剩一个主分支master，就可以提交了。  
+1. 创建分支  
+<font color="#5F9EA0">git branch name</font>  
+2. 创建并切换分支  
+<font color="#5F9EA0">git checkout -b name</font>
+3. 合并某分支到当前分支  
+<font color="#5F9EA0">git merge name</font>
+4. 删除分支  
+<font color="#5F9EA0">git branch -d name</font>
+5. 查看分支  
+<font color="#5F9EA0">git branch</font>
+6. 切换分支  
+<font color="#5F9EA0">git checkout name</font>          
+ 
 
 
 
